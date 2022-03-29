@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .area p {
+      color: red;
+    }
+    p {
+      color: blue;
+    }
+    #text {
+      color: green !important;
+    }
+  </style>
+  <!--<link rel="stylesheet" href="style.css" />-->
+  <body>
+    <!--
+        스타일 우선 순위
+
+        1. 명시도 점수가 높은 선언이 우선한다.
+        (!important (1000점)> 인라인(500점) > 아이디(100점) > 클래스(10점) > 태그(1점) > 전체 > 상속)
+        2. 점수가 같은 경우 가장 마지막에 해석되는 선언이 우선한다.
+        3. 명시도는 상속 규칙보다 우선한다.
+        4. !important 가 적용된 선언 방식이 다른 모든 방식보다 우선한다.
+
+        .list li.item{ color : red;} =>21점 정도
+        
+        .list li:hover{} => 21점.list : 클래스, li : 태그, hover : 클래스와 비슷 
+
+        .box ::before{} =>11점
+
+        #submit span{} =>101점 #submit :아이디 , span :태그
+
+        not은 점수가 없음
+        :not(.box){} =>10점 .box : 클래스
+        :not(h1){} =>1점 h1 : 태그
+
+
+    -->
+    <!-- 인라인 방식 
+       <h1 style="color: blue">헤딩태그</h1>-->
+    <div class="area">
+      <p id="text" style="color: orange">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+        necessitatibus inventore quo itaque minus aliquid eaque labore.
+        Quibusdam quos, at qui, magnam, voluptas id error quod rem natus itaque
+        laborum.
+      </p>
+    </div>
+  </body>
+</html>
