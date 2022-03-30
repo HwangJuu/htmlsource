@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .overflow {
+        height: 100px;
+        background-color: silver;
+        border: 1px solid black;
+
+        overflow: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+          overflow : 요소의 크기 이상으로 자식요소(내용)이 넘쳤을 때 처리
+          1)auto : 넘친 부분이 있는 경우만 잘라내고, 스크롤바를 이용해서 불 수 있도록 처리
+                   넘친 부분에 대해서만 스크롤이 생김
+          2)hidden : 넘친 부분을 잘라내고 보이지 않도록 함
+          3)scroll : 넘친 부분을 잘라내고, 스크롤바를 이용하여 볼 수 있도록 함.
+                     가로 세로 스크롤 생성
+          4) visible(기본값) : 넘친 부분을 자르지 않고 보여줌
+
+       -->
+    <p class="overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nostrum
+      voluptatibus excepturi facilis, harum reprehenderit deserunt rerum vel,
+      officia repellat laborum. Aut alias explicabo, accusamus sapiente debitis
+      recusandae delectus, nemo quae cupiditate adipisci commodi a, facilis
+      maxime ad laborum repellendus consequatur ratione cumque eligendi
+      reprehenderit perspiciatis id ea odit. Aut, quibusdam! Fugiat omnis
+      corrupti nam aspernatur nobis! Dolores explicabo nostrum, nulla ducimus
+      velit corporis rerum architecto tempora accusamus, dolorem fugit
+      doloremque facere ipsam totam omnis dignissimos impedit similique suscipit
+      quibusdam voluptas cum voluptatem illum sapiente! Culpa magni, nulla
+      veritatis, omnis fuga, voluptate expedita ex totam natus inventore sint
+      ad. Ab?
+    </p>
+  </body>
+</html>
